@@ -13,7 +13,7 @@ func TestNewGravatarFromEmail(t *testing.T) {
 	}
 }
 
-func TestGravatarGetUrl(t *testing.T) {
+func TestGravatarGetURL(t *testing.T) {
 	tests := []struct {
 		hash     string
 		def      string
@@ -36,7 +36,7 @@ func TestGravatarGetUrl(t *testing.T) {
 		g.Rating = test.rating
 		g.Size = test.size
 
-		if url := g.GetUrl(); url != test.expected {
+		if url := g.GetURL(); url != test.expected {
 			t.Errorf("got url: %q; expected: %q", url, test.expected)
 		}
 	}

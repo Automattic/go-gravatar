@@ -37,7 +37,7 @@ type Gravatar struct {
 	Size    int
 }
 
-func (g Gravatar) GetUrl() string {
+func (g Gravatar) GetURL() string {
 	path := "/avatar/" + g.Hash
 
 	v := url.Values{}

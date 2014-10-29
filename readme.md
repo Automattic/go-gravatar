@@ -8,12 +8,12 @@ If you already have the hash, build a new Gravatar object and generate its url l
 
     g := NewGravatar()
     g.Hash = "hash-goes-here"
-    url := g.GetUrl()
+    url := g.GetURL()
 
 If you have an email address:
 
     g := NewGravatarFromEmail("foo@example.com")
-    url := g.GetUrl()
+    url := g.GetURL()
 
 ## Contributors
 
