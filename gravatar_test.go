@@ -5,7 +5,7 @@ import (
 )
 
 func TestNewGravatarFromEmail(t *testing.T) {
-	email := "foo@example.com"
+	email := " foo@example.com"
 	emailHashed := "b48def645758b95537d4424c84d1a9ff"
 	g := NewGravatarFromEmail(email)
 	if g.Hash != emailHashed {

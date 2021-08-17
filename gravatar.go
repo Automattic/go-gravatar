@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"net/url"
 	"strconv"
+	"strings"
 )
 
 const (
@@ -13,7 +14,7 @@ const (
 )
 
 func NewGravatarFromEmail(email string) Gravatar {
-	hasher := md5.Sum([]byte(email))
+	hasher := md5.Sum([]byte(strings.TrimSpace(email)))
 	hash := hex.EncodeToString(hasher[:])
 
 	g := NewGravatar()

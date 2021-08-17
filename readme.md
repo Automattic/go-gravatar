@@ -2,6 +2,11 @@
 
 Simple go library to interact with Gravatar.
 
+## Installation
+```shell
+$ go get github.com/automattic/go-gravatar
+```
+
 ## Usage
 
 If you already have the hash, build a new Gravatar object and generate its url like so:
